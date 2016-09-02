@@ -3,24 +3,35 @@
 <head>
   <title>Ken's testing website!</title>
   <body text="white">
+  <!-- This script is for the dropdown menu, uses Javascript though! -->
+  <script type="text/javascript"> 
+      function goToNewPage()
+      {
+          var url = document.getElementById('list').value;
+          if(url != 'none') {
+              window.location = url;
+          }
+      }
+  </script>
+
 </head>
 <body>
-  <form name="Rick Astley Question" action="success.html">
 
-<style>
-
-{ margin: 0; padding: 0; }
-
-html { 
-        background: url('http://il6.picdn.net/shutterstock/videos/4538759/thumb/1.jpg') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-
-</style>
+  <!-- This is for the background. -->
+  <style> 
+  
+  { margin: 0; padding: 0; }
+  
+  html { 
+          background: url('http://il6.picdn.net/shutterstock/videos/4538759/thumb/1.jpg') no-repeat center  center fixed;  
+          -webkit-backgrou  nd-size: cover; 
+          -moz-background-  size: cover;  
+          -o-background-si  ze: cover;  
+          background-size:   cover; 
+  } 
+  
+  
+  </style> 
 
   <div>
     <h1>Kenneth Kang's Index Page</h1>
@@ -29,11 +40,11 @@ html {
   </div>
 
   <section>
-    <h3>One of the most well known memes is the <em>RickRoll</em>.</h3>
+    <h2>One of the most well known memes is the <em>RickRoll</em>.</h2>
     <p><img src="images/rickroll.gif" alt="Rick Astley dancing!" /></p>
     <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">[Picture Credit to www.youtube.com]</a></p>
     <p>
-    <h1>Some facts about the RickRoll</h1>
+    <h2>Some facts about the RickRoll:</h2>
       <ul>
         <li>The RickRoll is an internet phenomenon where a person often humorously pranks someone else by linking them the above Youtube video.</li>
         <li>The song is "Never Gonna Give You Up" by Rick Astley.</li>
@@ -44,31 +55,35 @@ html {
      
   </section>
 
-
-
-
-
-
+  <!-- Un-needed Form Code.
   <div>
     <label>Have you ever been RickRolled before?</label>
     <select name="Have you ever been rickrolled?">
         <option value="Yes">Yes</option>
         <option value="No">No</option></select>
     <button type="submit">Submit</button>
-  </div>
+  </div> 
+  -->
+
+  <label><strong>Have you ever been RickRolled before?</strong></label>
+  <select name="Have you ever been Rick Rolled?" id="list" accesskey="target">
+      <option value="sorry.html">Yes</option>
+      <option value="success.html">No</option>
+  <select>
+  <input type=button value="Go" onclick="goToNewPage()" />
 
 
+
+
+
+  <br><br>
+  <p><a href="http://www.shutterstock.com/video/clip-1203583-stock-footage-music-notes-flowing-through-space.html">[Background Credit]</a>
 
 
   <div><br><br><br><br><br><br><br>
 * Notes to self:<br>
 background: http://www.shutterstock.com/video/clip-1203583-stock-footage-music-notes-flowing-through-space.html
-* some content that mixes header and paragraph tags<br>
-* at least one image<br>
-* at least two block-level elements that give semantic meaning to content<br>
-* a table or form (you can submit to httpbin if you like, or to the other page of your site)<br>
-* a list<br>
-* at least one additional page that is linked from index.html<br>
+
 * Find an existing website about your topic (or similar). What makes this site good or bad? Look at the source code (View Source). Do you recognize any HTML elements? Try to guess what the things you don't recognize do. Add a link to this website and a few sentences about what makes it good or bad to your index.html page.
 
 
