@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Ken's testing website!</title>
-  <body text="white">
+
   <!-- This script is for the dropdown menu, uses Javascript though! -->
   <script type="text/javascript"> 
       function goToNewPage()
@@ -14,24 +14,15 @@
       }
   </script>
 
-</head>
-<body>
 
+
+
+
+</head>
+<body text="white">
   <!-- This is for the background. -->
-  <style> 
-  
-  { margin: 0; padding: 0; }
-  
-  html { 
-          background: url('http://il6.picdn.net/shutterstock/videos/4538759/thumb/1.jpg') no-repeat center  center fixed;  
-          -webkit-backgrou  nd-size: cover; 
-          -moz-background-  size: cover;  
-          -o-background-si  ze: cover;  
-          background-size:   cover; 
-  } 
-  
-  
-  </style> 
+  <img src='http://il6.picdn.net/shutterstock/videos/4538759/thumb/1.jpg' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;' alt="background picture">
+
 
   <div>
     <h1>Kenneth Kang's Index Page</h1>
@@ -43,7 +34,6 @@
     <h2>One of the most well known memes is the <em>RickRoll</em>.</h2>
     <p><img src="images/rickroll.gif" alt="Rick Astley dancing!" /></p>
     <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">[Picture Credit to www.youtube.com]</a></p>
-    <p>
     <h2>Some facts about the RickRoll:</h2>
       <ul>
         <li>The RickRoll is an internet phenomenon where a person often humorously pranks someone else by linking them the above Youtube video.</li>
@@ -51,7 +41,7 @@
         <li>It was made in 1987, and it was actually a number one hit on numerous international charts!</li>
         <li>It was reported that in 2010, the song had been played over 39 million times. Sadly, Astley only received $12 USD in royalties from Youtube, as his performance share.</li>
         <li><a href="https://en.wikipedia.org/wiki/Rickrolling#See_also">[Credit to Wikipedia]</a></li>
-    </ul></p>
+    </ul>
      
   </section>
 
@@ -67,10 +57,10 @@
 
   <div>
   <label><strong>Have you ever been RickRolled before?</strong></label>
-  <select name="Have you ever been Rick Rolled?" id="list" accesskey="target">
+  <select name="Have you ever been Rick Rolled?" id="list">
       <option value="sorry.html">Yes</option>
       <option value="success.html">No</option>
-  <select>
+  </select>
   <input type=button value="Go" onclick="goToNewPage()" /> <!-- requires Javascript script at top -->
   </div>
 
@@ -89,8 +79,6 @@
   <br><br>
   <p><a href="http://www.shutterstock.com/video/clip-1203583-stock-footage-music-notes-flowing-through-space.html">[Background Credit]</a>
 
-
-</div>
 
 </body>
 </html>
