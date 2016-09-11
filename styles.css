@@ -30,6 +30,16 @@ h2
   position:relative;
 }
 
+/*
+footer.centered
+{
+  max-width:100%;
+  text-align: center;
+  margin:auto;
+  position:relative;
+}
+*/
+
 #myImage
 {
     display:block;
